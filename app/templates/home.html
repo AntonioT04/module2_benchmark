@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+    <ul>
+        <li>
+            <a href = "/charger">
+                <h2>Dodge Charger</h2>
+                <img src = "{% static "images/charger.png" %}" >
+            </a>
+        </li>
+        <li>
+            <a href = "/camaro">
+                <h2>Chevrolet Camaro</h2>
+                <img src = "{% static "images/camaro.png" %}" >
+            </a>
+        </li>
+        <li>
+            <a href = "/mustang">
+                <h2>Ford Mustang</h2>
+                <img src = "{% static "images/mustang.png" %}" >
+            </a>
+        </li>
+    </ul>
+{% endblock content %}

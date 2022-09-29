@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{%load static%}
+{% block content %}
+    <div class = "container">
+        <div class= "car_title">
+            <h1>{{name}}</h1>
+        </div>
+        <div class = "desc">
+        <h2>{{desc}}</h2>
+        </div>
+        {% for type in types %}
+        <li class = "type">{{type}}</li>
+        
+        {% endfor %}
+    </div>
+    
+{% endblock content %}
